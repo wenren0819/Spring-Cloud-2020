@@ -17,7 +17,6 @@ import javax.annotation.Resource;
 @RestController
 @Slf4j
 public class PaymenController {
-
     @Resource
     private PaymentService paymentService;
 

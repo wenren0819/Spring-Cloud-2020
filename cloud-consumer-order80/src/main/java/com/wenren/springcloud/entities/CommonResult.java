@@ -7,13 +7,12 @@ import lombok.NoArgsConstructor;
 /**
  * @author wangyang
  * @version V1.0
- * @create 2020-03-23-13:53
+ * @create 2020-03-24-11:28
  */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class CommonResult<T> {
-    //404 not_found
     private Integer code;
     private String message;
     private T data;
