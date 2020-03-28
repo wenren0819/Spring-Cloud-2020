@@ -33,7 +33,7 @@ public class PaymenController {
     @PostMapping(value = "/payment/create")
     public CommonResult create(@RequestBody Payment payment) {
         int result = paymentService.create(payment);
-        Log.info("******插入结果:" + result);
+        log.info("******插入结果:" + result);
 
         if (result > 0) {
             return new CommonResult(200, "插入数据成功,serverPort:" + serverPort, result);
@@ -45,7 +45,7 @@ public class PaymenController {
     @GetMapping(value = "/payment/get/{id}")
     public CommonResult<Payment> create(@PathVariable("id") Long id) {
         Payment payment = paymentService.getPaymentById(id);
-        Log.info("******插入结果:" + payment + "\t" + "O(∩_∩)O哈哈~");
+        log.info("******插入结果:" + payment + "\t" + "O(∩_∩)O哈哈~");
 
         if (payment != null) {
             return new CommonResult(200, "查询成功,serverPort:" + serverPort, payment);
@@ -58,12 +58,12 @@ public class PaymenController {
     public Object discovery() {
         List<String> services = discoveryClient.getServices();
         for (String service : services) {
-            Log.info("*****service:" + service);
+            log.info("*****service:" + service);
         }
 
         List<ServiceInstance> instances = discoveryClient.getInstances("CLOUD-PAYMENT-SERVICE");
         for (ServiceInstance instance : instances) {
-            Log.info(instance.getServiceId() + "\t" + instance.getHost() + "\t" + instance.getPort() + "\t" + instance.getUri());
+            log.info(instance.getServiceId() + "\t" + instance.getHost() + "\t" + instance.getPort() + "\t" + instance.getUri());
         }
 
         return this.discoveryClient;
