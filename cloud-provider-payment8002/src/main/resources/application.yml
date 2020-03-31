@@ -6,7 +6,8 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource #当前数据源操作类型
     driver-class-name: org.gjt.mm.mysql.Driver #mysql驱动包
-    url: jdbc:mysql://192.168.0.135:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false #公司
+    url: jdbc:mysql://123.125.5.26:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false #公司公网
+    #url: jdbc:mysql://192.168.0.135:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false #公司内网
     #url: jdbc:mysql://192.168.123.135:3306/db2019?useUnicode=true&characterEncoding=utf-8&useSSL=false #家
     username: root
     password: Perfect1
