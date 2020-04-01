@@ -4,7 +4,7 @@ server:
 #服务别名----注册zookeeper到注册中心名称
 spring:
   application:
-    name: cloud-provider-payment
+    name: cloud-provider-zk-payment
   cloud:
     zookeeper:
       connect-string: 123.125.5.26:2182
