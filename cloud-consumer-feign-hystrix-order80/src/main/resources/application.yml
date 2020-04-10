@@ -6,3 +6,21 @@ eureka:
     register-with-eureka: false
     service-url:
       defaultZone: http://eureka7001.com:7001/eureka/
+
+feign:
+  hystrix:
+    enabled: true
+
+#如果配置了ferign-hystrix，就要配置ribbon（默认1秒）和hystrix的超时时间，且ribbon超时时间>hystrix超时时间，否则ribbon超时也会自动降级
+ribbon:
+  ReadTimeout: 5000
+  ConnectTimeout: 5000
+
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 4000
+
