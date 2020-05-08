@@ -13,6 +13,7 @@ public class T {
         BigDecimal rate=new BigDecimal(0.9817);
         BigDecimal result = amount.multiply(rate).divide(new BigDecimal(100)).setScale(0, BigDecimal.ROUND_DOWN);
         System.out.println(result.multiply(new BigDecimal(100)));
-        System.out.println(UUID.randomUUID());
+        System.out.println(UUID.randomUUID().toString().replace("-", ""));
+        System.out.println(UUID.randomUUID().toString().replace("-", ""));
     }
 }
