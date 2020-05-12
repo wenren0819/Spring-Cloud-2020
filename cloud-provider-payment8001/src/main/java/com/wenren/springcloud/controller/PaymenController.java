@@ -76,7 +76,7 @@ public class PaymenController {
     }
 
     @GetMapping(value = "payment/feign/timeout")
-    public String paymentFeignTimeout(){
+    public String paymentFeignTimeout() {
         try {
             TimeUnit.SECONDS.sleep(3);
         } catch (InterruptedException e) {
@@ -84,5 +84,10 @@ public class PaymenController {
         }
 
         return serverPort;
+    }
+
+    @GetMapping("/payment/zipkin")
+    public String paymentZipkin() {
+        return "Hi, i'm paymentzipkin server fall back, welcome to wenren home, O(∩_∩)O哈哈~";
     }
 }
