@@ -15,5 +15,6 @@ public class T {
         System.out.println(result.multiply(new BigDecimal(100)));
         System.out.println(UUID.randomUUID().toString().replace("-", ""));
         System.out.println(UUID.randomUUID().toString().replace("-", ""));
+        System.out.println(UUID.randomUUID().toString().replace("-", ""));
     }
 }
