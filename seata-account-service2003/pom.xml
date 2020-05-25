@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>seata-order-service2001</artifactId>
+    <artifactId>seata-account-service2003</artifactId>
 
     <dependencies>
         <!--Spring Cloud Alibaba Nacos-->

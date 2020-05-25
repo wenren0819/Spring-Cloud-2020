@@ -27,6 +27,11 @@ public class OrderServiceImpl implements OrderService {
     @Resource
     private AccountService accountService;
 
+    /**
+     * 创建订单->调用库存服务扣减库存->调用账户服务扣减账户余额->修改订单状态
+     * 简单说：下订单->扣库存->减余额->改状态
+     * @param order
+     */
     @Override
     public void create(Order order) {
         //1、新建订单
