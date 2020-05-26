@@ -17,10 +17,6 @@ spring:
     username: root
     password: Perfect1
 
-feign:
-  hystrix:
-    enabled: false
-
 logging:
   level:
     io:

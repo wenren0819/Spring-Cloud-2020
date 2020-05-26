@@ -19,6 +19,13 @@ public class AccountController {
     @Resource
     private AccountService accountService;
 
+    /**
+     * 扣减账户余额
+     *
+     * @param userId
+     * @param money
+     * @return
+     */
     @PostMapping(value = "/account/decrease")
     CommonResult decrease(@RequestParam("userId") Long userId, @RequestParam("money") BigDecimal money) {
         accountService.decrease(userId, money);

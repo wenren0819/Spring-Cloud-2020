@@ -18,10 +18,16 @@ public class StorageServiceImpl implements StorageService {
     @Resource
     private StorageDao storageDao;
 
+    /**
+     * 扣减库存
+     *
+     * @param productId
+     * @param count
+     */
     @Override
     public void decrease(Long productId, Integer count) {
-        log.info("------>开始扣减库存");
+        log.info("------>storage-service中扣减库存开始");
         storageDao.decrease(productId,count);
-        log.info("------>扣减库存结束，O(∩_∩)O哈哈~");
+        log.info("------>storage-service中扣减库存结束");
     }
 }

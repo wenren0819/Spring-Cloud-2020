@@ -10,7 +10,10 @@
     </resultMap>
 
     <update id="decrease">
-        update t_storage set used = used + #{count}, residue = residue - #{count}
+        update
+            t_storage
+        set
+            used = used + #{count}, residue = residue - #{count}
         where product_id = #{productId};
     </update>
 </mapper>
