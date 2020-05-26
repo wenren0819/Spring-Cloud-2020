@@ -35,7 +35,7 @@ public class OrderServiceImpl implements OrderService {
     @Override
     public void create(Order order) {
         //1、新建订单
-        log.info("------>开始新建订单start");
+        log.info("------>开始新建订单");
         orderDao.create(order);
         //2、扣减库存
         log.info("------>订单微服务开始调用库存，做扣减start");

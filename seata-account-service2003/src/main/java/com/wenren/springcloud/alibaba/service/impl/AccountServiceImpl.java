@@ -21,6 +21,8 @@ public class AccountServiceImpl implements AccountService {
 
     @Override
     public void decrease(Long userId, BigDecimal money) {
+        log.info("------>开始扣减账户");
         accountDao.decrease(userId,money);
+        log.info("------>扣减账户结束，O(∩_∩)O哈哈~");
     }
 }

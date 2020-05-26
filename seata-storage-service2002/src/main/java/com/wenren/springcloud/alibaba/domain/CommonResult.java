@@ -1,4 +1,4 @@
-package domain;
+package com.wenren.springcloud.alibaba.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
