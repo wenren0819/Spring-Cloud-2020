@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper SYSTEM "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.wenren.springcloud.alibaba.dao.OrderDao">
+<mapper namespace="com.wenren.springcloud.alibaba.dao.AccountDao">
     <resultMap id="BaseResultMap" type="com.wenren.springcloud.alibaba.domain.Account">
         <id column="id" property="id" jdbcType="BIGINT"></id>
         <result column="user_id" property="userId" jdbcType="BIGINT"></result>
