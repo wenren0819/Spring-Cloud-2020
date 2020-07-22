@@ -1,6 +1,5 @@
 package com.wenren.springcloud.controller;
 
-import com.oracle.tools.packager.Log;
 import com.wenren.springcloud.entities.CommonResult;
 import com.wenren.springcloud.entities.Payment;
 import com.wenren.springcloud.service.PaymentService;

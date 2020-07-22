@@ -1,6 +1,5 @@
 package com.wenren.springcloud.filter;
 
-import com.sun.xml.internal.xsom.impl.UName;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
